@@ -1,0 +1,104 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Hahmlet", serif;
+  font-size: 1.6rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  font-family: "Hahmlet", serif;
+  font-size: 2rem;
+  background: $accent-colour;
+  color: $main-colour;
+  border: none;
+  border-radius: 1.5rem;
+  padding: 1rem 3rem;
+  transition: 0.5s all ease;
+
+  &:hover,
+  &:focus {
+    background: white;
+  }
+}
+
+input,
+textarea {
+  font-family: "Hahmlet", serif;
+  font-size: 1.6rem;
+  border: none;
+  border-radius: 1.5rem;
+  padding: 1rem;
+}
+
+.container {
+  width: Min(90%, 1100px);
+  margin: auto;
+  padding: 7rem 0;
+}
+
+.container--wide {
+  width: 95%;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+.col + .col {
+  margin-top: 5rem;
+}
+
+p + p {
+  margin-top: 1rem;
+}
+
+.title {
+  font-family: "Parisienne", cursive;
+  font-size: 5rem;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+.dark-bg {
+  background: $main-colour;
+  color: white;
+}
+
+.light-bg {
+  background: $accent-colour;
+}
+
+.wave {
+  width: 100%;
+  height: auto;
+}
+
+.wave--top {
+  transform: translateY(-1%);
+}
+
+.wave--bottom {
+  position: relative;
+  bottom: -10px;
+}
+
+/* LARGE SCREENS */
+@media screen and (min-width: 2048px) {
+  .container {
+    width: Min(90%, 1300px);
+  }
+}

@@ -1,0 +1,17 @@
+$main-colour: #453227;
+$accent-colour: #ebd3b6;
+
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+@import "global";
+@import "nav-foot";
+@import "hero";
+@import "about";
+@import "cakes";
+@import "contact";
+@import "media";

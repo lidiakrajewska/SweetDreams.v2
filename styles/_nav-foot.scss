@@ -1,0 +1,92 @@
+footer .row,
+nav .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: "Parisienne", cursive;
+  font-size: 2rem;
+  text-decoration: none;
+  color: white;
+}
+
+.burger {
+  display: block;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.line {
+  display: block;
+  background-color: white;
+  padding: 0.1rem 2rem;
+  margin: 0.5rem;
+  transition: all 0.5s ease;
+}
+
+.nav-links {
+  width: 100%;
+  height: 100%;
+  @include flex(column, center, center);
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 100%;
+  background-color: $main-colour;
+  list-style: none;
+  transition: transform 1s ease;
+}
+
+.nav-links__item {
+  font-size: 4rem;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.nav-links__item + .nav-links__item {
+  margin-top: 3rem;
+}
+
+.toggle .line--1 {
+  transform: rotateZ(45deg) translateY(450%);
+}
+
+.toggle .line--2 {
+  opacity: 0;
+}
+
+.toggle .line--3 {
+  transform: rotateZ(-45deg) translateY(-450%);
+}
+
+.nav-open {
+  transform: translateX(-100%);
+}
+
+.no-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
+.footer-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links__item a,
+.footer-links__item {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-links__item i {
+  cursor: pointer;
+}
+
+.footer-links__item + .footer-links__item {
+  margin-left: 2rem;
+}

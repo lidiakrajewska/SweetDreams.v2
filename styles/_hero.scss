@@ -1,0 +1,25 @@
+.hero .container {
+  padding: 15rem 0;
+}
+
+.hero .row {
+  @include flex(column, center, center);
+}
+
+.hero__circle {
+  background: white;
+  color: $main-colour;
+  border-radius: 50%;
+  text-align: center;
+  padding: 12rem 2rem;
+}
+
+.hero__circle p {
+  font-family: "Hahmlet", serif;
+  font-weight: 600;
+}
+
+.title--big {
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}

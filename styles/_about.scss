@@ -1,0 +1,25 @@
+/* About me and about ingredients sections */
+
+.about__img {
+  border-radius: 5rem;
+}
+
+.ingredients__cards {
+  text-align: center;
+  list-style: none;
+  margin-bottom: 5rem;
+}
+
+.ingredients__card {
+  font-size: 2rem;
+  background: $main-colour;
+  color: white;
+  border-radius: 2rem;
+  margin: 2rem 0;
+  padding: 1.5rem 0;
+}
+
+.card__icon {
+  font-size: 2.5rem;
+  margin-right: 1rem;
+}

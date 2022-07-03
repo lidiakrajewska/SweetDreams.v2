@@ -1,0 +1,24 @@
+.contact__text--big {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.contact__form {
+  @include flex(column, center, flex-start);
+}
+
+.contact__form label {
+  margin-bottom: 1rem;
+}
+
+.contact__form input,
+.contact__form textarea,
+.contact__button {
+  width: 100%;
+}
+
+.contact__form input,
+.contact__form textarea {
+  margin-bottom: 2rem;
+}
